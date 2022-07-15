@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--This is a sample page for playlist so using same page for each artists-->
+<head>
+    <title></title>
+    <script src="https://kit.fontawesome.com/4c8d21ec57.js" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="responsive.css">
+<style>
+    /*page specific styling*/
+    @media (max-width: 1199px){
+        main {
+                align-items: flex-start;
+        }
+    }
+    @media (max-width: 767px){
+        main {
+                width:95%;
+                margin:1rem;
+        }
+    }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="bg-color">
+    <!-- navigation bar -->
+    <!-- same as index.html -->
+    <header id="nav-bar">
+        <nav>
+            <ul id="nav-contents">
+                <!-- logo -->
+                <li id="logo"><a href="index.html"><img src="../assets/logo.png" alt="Logo"></a></li>
+                <li id="nav-button" class="show-on-pc"><a href="#">Favourite</a></li>
+                <!-- hiding heart icon for pc -->
+                <li id="nav-button" class="hide-on-pc"><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                <!-- search button -->
+                <li id="search-bar-container" class="left-align">
+                    <form action="" id="search-bar">
+                        <button type="submit" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="text" id="search-text" placeholder="Search">
+
+                    </form>
+                </li>
+                <!-- right sied button -->
+                <li id="nav-button" class="left-align">
+                    <div id="notification">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                </li>
+                <!-- \\profile image -->
+                <li id="profile-container" class="left-align"><a href="#">
+                        <img src="assets/profile.jpg"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main section -->
+    <main>
+        <div id="jumbotron-container">
+            <!--jumbotron image-->
+            <div id="jumbo-image">
+                <img src="./assets/jumbotron-card.jpeg">  
+            </div>
+            <!--right side content-->
+            <div id="jumbo-content">
+                <h1>Cold Play</h1><!--artist name-->
+                <div id="content"><!--info about the artist-->
+                <p id="followers">851 Followers</p><!--followers-->
+                <p id="Bandtype">British Band</p>
+                <p id="Bandinfo">Coldplay are a British rock band formed in London in 1996. They consist of vocalist and pianist Chris Martin, guitarist Jonny Buckland, bassist Guy Berryman, drummer Will Champion and creative director Phil Harvey. They met at University College London and began playing music together from 1996 to 1998, first calling themselves Pectoralz and then Starfish.</p>
+                </div>
+                <!-- jumbotron button -->
+                <div id="jumbo-button">
+                    <button type="button" id="playall-button">
+                            Play All
+                    </button>
+                    <a href="#" id="follow-button">Follow</a>
+                </div>
+                <p id="tracks-albums">247 Tracks | 128 Albums</p>
+                
+            </div>
+        </div>
+        <!-- all cards that are shown on playlist goes here -->
+        <div id="tracks-container">
+                <ol id="tracks">
+                    <!-- playlist tracks -->
+                    <!-- same code copied  -->
+                        <div id="playlist-item"> 
+                            <!-- list is inside div as we want to give serial number -->
+                            <li class="list-number"></li>   
+                                <div id="track-image">
+                                    <img src="./assets/playlist1.jpg">
+                                </div>
+                                <!-- information about track -->
+                                <div id="track-info">
+                                    <h5 id="track-title">Mirage</h5>
+                                    <p id="track-artist">Else</p>
+                                </div>  
+                                <div id="playlist-buttons">
+                                    <div id="heart"><a href="#"><i class="fa-solid fa-heart"></i></a></div>
+                                    <div id="plus"><a href="#"><i class="fa-solid fa-plus"></i></a></div>   
+                                </div> 
+                            </li>
+                        </div> 
+                        <div id="playlist-item"> 
+                            <!-- list is inside div as we want to give serial number -->
+                            <li class="list-number"></li>   
+                                <div id="track-image">
+                                    <img src="./assets/playlist2.jpg">
+                                </div>
+                                <div id="track-info">
+                                    <h5 id="track-title">Mirage</h5>
+                                    <p id="track-artist">Else</p>
+                                </div>  
+                                <div id="playlist-buttons">
+                                    <div id="heart"><a href="#"><i class="fa-solid fa-heart"></i></a></div>
+                                    <div id="plus"><a href="#"><i class="fa-solid fa-plus"></i></a></div>   
+                               </div> 
+                            </li>
+                        </div>
+                        <div id="playlist-item"> 
+                            <!-- list is inside div as we want to give serial number -->
+                            <li class="list-number"></li>   
+                                <div id="track-image">
+                                    <img src="./assets/playlist3.jpg">
+                                </div>
+                                <div id="track-info">
+                                    <h5 id="track-title">Mirage</h5>
+                                    <p id="track-artist">Else</p>
+                                </div>  
+                                <div id="playlist-buttons">
+                                    <div id="heart"><a href="#"><i class="fa-solid fa-heart"></i></a></div>
+                                    <div id="plus"><a href="#"><i class="fa-solid fa-plus"></i></a></div>   
+                                </div> 
+                            </li>
+                        </div>
+                        <div id="playlist-item"> 
+                            <!-- list is inside div as we want to give serial number -->
+                            <li class="list-number"></li>   
+                                <div id="track-image">
+                                    <img src="./assets/playlist4.jpg">
+                                </div>
+                                <div id="track-info">
+                                    <h5 id="track-title">Mirage</h5>
+                                    <p id="track-artist">Else</p>
+                                </div>  
+                                <div id="playlist-buttons">
+                                    <div id="heart"><i class="fa-solid fa-heart"></i></div>
+                                    <div id="plus"><i class="fa-solid fa-plus"></i></div>   
+                                </div> 
+                            </li>
+                        </div>
+                        <div id="playlist-item"> 
+                            <!-- list is inside div as we want to give serial number -->
+                            <li class="list-number"></li>   
+                                <div id="track-image">
+                                    <img src="./assets/playlist2.jpg">
+                                </div>
+                                <div id="track-info">
+                                    <h5 id="track-title">Mirage</h5>
+                                    <p id="track-artist">Else</p>
+                                </div>  
+                                <div id="playlist-buttons">
+                                    <div id="heart"><a href="#"><i class="fa-solid fa-heart"></i></a></div>
+                                    <div id="plus"><a href="#"><i class="fa-solid fa-plus"></i></a></div>   
+                                </div> 
+                            </li>
+                        </div>
+                    
+                </ol>
+        </div>
+    </main>
+    <aside>
+        <div id="similar-artist-container">
+            <div id="similar-heading"><h1>Similar Artists</h1><a href="#">View All</a></div>
+            <div id="similar-artist-container">
+                <div id="release-card"><!--same release card from index.html-->
+                    <div id="latest-section-image"><i class="fa-solid fa-play" id="latest-play-image"></i><img
+                            src="./assets/latest-section.jpg"></div>
+                    <div id="latest-section-main">
+                        <h5>Onism</h5>
+                        <p>Artist name</p>
+                    </div>
+                    <div id="similar-dot-menu"><!--some edit that's why used this so that no overtite takes place-->
+                        <p><a href="#" id="dot-button"><i class="fa-solid fa-ellipsis"></i></a></p>
+                        <p id="time">4:44</p>
+                        <div id="dropdown-menu">
+                            <div id="option"><a href="#"><i class="fa-solid fa-play"></i><span>Play Now</span>
+                                    <hr>
+                                </a></div>
+                            <div id="option"><a href="#"><i class="fa-solid fa-plus"></i><span>Add to Queue</span>
+                                    <hr>
+                                </a></div>
+                            <div id="option"><a href="#"><i class="fa-solid fa-folder-plus"></i><span>Add to
+                                        favorite</span>
+                                    <hr>
+                                </a></div>
+                            <div id="option"><a href="#"><i class="fa-solid fa-circle-info"></i><span>Get
+                                        info</span></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="release-card"><!--same release card from index.html-->
+                    <div id="latest-section-image"><i class="fa-solid fa-play" id="latest-play-image"></i><img
+                            src="./assets/latest-section.jpg"></div>
+                    <div id="latest-section-main">
+                        <h5>Onism</h5>
+                        <p>AUG 11,2017</p>
+                    </div>
+                    <div id="similar-dot-menu"><!--some edit that's why used this so that no overtite takes place-->
+                        <p><a href="#" id="dot-button"><i class="fa-solid fa-ellipsis"></i></a></p>
+                        <p id="time">4:44</p>
+                        <div id="dropdown-menu">
+                            <div id="option"><a href="#"><i class="fa-solid fa-play"></i><span>Play Now</span>
+                                    <hr>
+                                </a></div>
+                            <div id="option"><a href="#"><i class="fa-solid fa-plus"></i><span>Add to Queue</span>
+                                    <hr>
+                                </a></div>
+                            <div id="option"><a href="#"><i class="fa-solid fa-folder-plus"></i><span>Add to
+                                        favorite</span>
+                                    <hr>
+                                </a></div>
+                            <div id="option"><a href="#"><i class="fa-solid fa-circle-info"></i><span>Get
+                                        info</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- recently plaiyin section -->
+        <div id="recently-playing">
+            <div id="similar-heading"><h1>Queue</h1><a href="#">View All</a></div>
+            <ol id="recent-container">
+                <div id="recent-playlist-item"> 
+                    <!-- list is inside div as we want to give serial number -->
+                    <li class="list-number"></li>   
+                        <div id="track-image">
+                            <img src="./assets/playlist1.jpg">
+                        </div>
+                        <div id="track-info">
+                            <h5 id="track-title">Mirage</h5>
+                            <p id="track-artist">Else</p>
+                        </div>  
+                        <div id="recent-playlist-buttons">
+                            <div id="heart"><a href="#"><i class="fa-solid fa-heart"></i></a></div>
+                        </div> 
+                    </li>
+                </div>
+                <div id="recent-playlist-item"> 
+                    <!-- list is inside div as we want to give serial number -->
+                    <li class="list-number"></li>   
+                        <div id="track-image">
+                            <img src="./assets/playlist1.jpg">
+                        </div>
+                        <div id="track-info">
+                            <h5 id="track-title">Mirage</h5>
+                            <p id="track-artist">Else</p>
+                        </div>  
+                        <div id="recent-playlist-buttons">
+                            <div id="heart"><a href="#"><i class="fa-solid fa-heart"></i></a></div>
+                        </div> 
+                    </li>
+                </div>
+                <div id="recent-playlist-item"> 
+                    <!-- list is inside div as we want to give serial number -->
+                    <li class="list-number"></li>   
+                        <div id="track-image">
+                            <img src="./assets/playlist1.jpg">
+                        </div>
+                        <div id="track-info">
+                            <h5 id="track-title">Mirage</h5>
+                            <p id="track-artist">Else</p>
+                        </div>  
+                        <div id="recent-playlist-buttons">
+                            <div id="heart"><a href="#"><i class="fa-solid fa-heart"></i></a></div>
+                        </div> 
+                    </li>
+                </div>
+                <div id="recent-playlist-item"> 
+                    <!-- list is inside div as we want to give serial number -->
+                    <li class="list-number"></li>   
+                        <div id="track-image">
+                            <img src="./assets/playlist1.jpg">
+                        </div>
+                        <div id="track-info">
+                            <h5 id="track-title">Mirage</h5>
+                            <p id="track-artist">Else</p>
+                        </div>  
+                        <div id="recent-playlist-buttons">
+                            <div id="heart"><a href="#"><i class="fa-solid fa-heart"></i></a></div>
+                        </div> 
+                    </li>
+                </div>
+                <div id="recent-playlist-item"> 
+                    <!-- list is inside div as we want to give serial number -->
+                    <li class="list-number"></li>   
+                        <div id="track-image">
+                            <img src="./assets/playlist1.jpg">
+                        </div>
+                        <div id="track-info">
+                            <h5 id="track-title">Mirage</h5>
+                            <p id="track-artist">Else</p>
+                        </div>  
+                        <div id="recent-playlist-buttons">
+                            <div id="heart"><a href="#"><i class="fa-solid fa-heart"></i></a></div>
+                        </div> 
+                    </li>
+                </div>
+                <div id="recent-playlist-item"> 
+                    <!-- list is inside div as we want to give serial number -->
+                    <li class="list-number"></li>   
+                        <div id="track-image">
+                            <img src="./assets/playlist1.jpg">
+                        </div>
+                        <div id="track-info">
+                            <h5 id="track-title">Mirage</h5>
+                            <p id="track-artist">Else</p>
+                        </div>  
+                        <div id="recent-playlist-buttons">
+                            <div id="heart"><a href="#"><i class="fa-solid fa-heart"></i></a></div>
+                        </div> 
+                    </li>
+                </div>
+            </ol>
+        </div>
+    </aside>
+    <!-- same code as index.html -->
+    <musicplayer>
+        <div id="music-player-continer">
+            <div id="current-playing-image">
+                <img src="./assets/latest4.jpg">
+            </div>
+            <div id="current-title-container">
+                <div id="current-song-name"><marquee>Sample song name</marquee></div>
+                <div id="current-artist-name">John Paterson</div>
+            </div>
+            <div id="player-add-remove">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fas fa-ban"></i>
+            </div>
+            <div id="music-control">
+                <!-- buttons to control music -->
+                <div id="shuffle"><a href="#"><i class="fas fa-random"></i></a></div>
+                <div id="left-forward"><a href="#"><i class="fa-solid fa-backward-step"></a></i></div>
+                <div id="play"><a href="#"><i class="fa-regular fa-circle-pause"></i></a></div>
+                <div id="right-forward"><a href="#"><i class="fa-solid fa-forward-step"></a></i></div>
+                <div id="repeat"><a href="#"><i class="fa-solid fa-repeat"></i></a></div>
+            </div>
+            <div id="progress-bar">
+                <div id="progress-container">
+                    <!-- progress bar slider -->
+                    <div id="progress">
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="right-side-buttons">
+                <div id="checklist"><a href="#"><i class="fa-solid fa-list-check"></i></a></div>
+                <div id="cast"><a href="#"><i class="fa-brands fa-chromecast"></i></a></div>
+                <div id="volume-bar"><a href="#"><i class="fa-solid fa-volume-high"></i></a> 
+                    <div id="volume-container">
+                    <!-- progress bar slider -->
+                    <div id="volume">
+                        <i class="fa-solid fa-circle"></i>
+                    </div>
+                </div>
+            </div>
+                <div id="maximize"><a href="#"></a></div>
+            </div>
+        </div>
+    </musicplayer>
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+ /* Media Query for tablets and low end pc*/
+@media (max-width: 1199px) {
+    nav{
+        margin-left:-2rem;
+    }
+   #logo img{
+        width:5rem;
+        height:5rem;
+       }
+   #search-bar input[type="text"]{
+        width:20rem; 
+    }
+    #nav-button a {
+       margin-left: 1rem;
+   }
+    #nav-contents{
+       justify-content: space-between;
+       align-items: center;
+    }
+    #profile-container img {
+       width: 3rem;
+       margin-left: 0rem;
+   }
+    #search-bar-container{
+        margin-top:-1rem;
+    }
+    .left-align{
+        left:0%;
+    }
+    .fa-heart{
+        margin-right:1rem;
+        margin-left:-1rem ;
+    }
+    /* reverse this so that it can show on mobile */
+    .show-on-pc{
+        display: none;
+    }
+    .hide-on-pc{
+        display: block;
+    }
+    /* main */
+    main{
+        margin-right: 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #carousel-container{
+        width: 100%;
+        justify-content: center;
+    }
+    #carousel-container>span img{
+        width: 14.5rem;
+        height: 25rem;
+        margin-left:3rem;
+    }
+    #carousel-container>span:hover img{
+        width: 14.5rem;
+        height: 25rem;
+        margin:2rem
+    }
+    #dot-menu:focus>#dropdown-menu{
+       display: block;            
+   }
+   #popular{
+    width: 95%;
+   }
+   #popular-container{
+       justify-content:space-around;
+   }
+    #artist img{
+       width: 6.5rem;
+        height:6.5rem;
+   }
+   #artist-name{
+       font-size: .8rem;
+   }
+   #artist a:hover >#artist-play-image{
+       display: none;            
+   }
+   #stations{
+       width:95%;
+   }
+   #station-container{
+       height:5rem;
+       margin-top:1rem;
+       width: 95%;
+       overflow-x: auto;
+       justify-content: space-between;
+   }
+   #station-category img{
+    height: 6rem;
+    width: 6rem;
+   }
+   #station-category img:focus{
+       box-shadow:3px 3px 10px rgb(202, 202, 202); 
+       opacity: 0.9;
+       filter:blur(0px);
+   }
+   #playlist{
+       margin: 1vh 1vw;
+       width: 95%;
+   }
+   #playlist-container{
+       flex-direction: column;    
+   }
+   #playlist img{
+    width: 100%;
+    height: 20rem;
+    }
+   #playlist img:focus{
+       transform: scale(1); 
+   }
+   #playlist-title{
+    font-size: 3rem;
+    left: 32%;
+    top: 8rem;
+   }
+   #latest-lang-container{
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+   }
+   
+   #music-player-continer{
+       height:4rem;
+       top:30rem;
+       bottom: 0.5rem;
+   }
+   #current-title-container{
+       margin-top:.9rem;
+       margin-left:-1rem;
+       font-size:.9rem;
+       width: 4.5rem;
+   }
+   #current-artist-name{
+       font-size:.7rem;
+   }
+   #current-playing-image img{
+       width: 3rem ;
+       height:3rem;
+       margin:-2.7rem 1rem;
+   }
+   #player-add-remove,#music-control>div:not(#play){/*not possible to palace all buttons*/
+       display: none;
+   }
+   #music-control{
+       top: 1rem;
+       left:0;
+   }
+   #music-control>div/*play button*/
+   {
+        margin-left: 55vw;
+       font-size:1.5rem;
+   }
+   #progress-container{
+       top:40%;
+       left:25%;
+       width:40%;
+   }
+   #volume-container{
+       display: none;
+   }
+   #right-side-buttons{
+       right: -2rem;
+       font-size:1rem;
+       bottom:30%;
+   }
+   #queue{
+       display: none;
+   }
+/* second 
+  page css */
+
+  #jumbotron-container{
+      width: 60%;
+      height: 20%;
+  }
+  #jumbo-image{
+    filter: blur(7px) brightness(0.3);
+  }
+  #jumbo-content{
+      z-index: 1;
+      position: absolute;
+  }
+  #content {/*jumbo context*/
+    color: #cbcbcb;
+    line-height: 1.5rem;
+}
+    #tracks-container {
+        width: 62%;
+    }
+    #playlist-item{
+        width: 100%;
+    }
+    #playlist-buttons{
+        right: -40%;
+    }
+    aside {/*as aside is not visible in index.html*/
+        left: 66%;
+        top: 13%;
+    }
+    #similar-heading h1 {
+        display: inline;
+        margin-right: 22%;
+    }
+    #recent-container {
+        overflow-y: auto;
+        height: 28rem;
+        width: 108%;
+    }
+}
+ /* Media Query for Mobile Devices */
+ @media (max-width:767px) {
+  
+     #profile-container img {
+        margin-right: 1rem;
+    }
+     #carousel-container>span img{
+         width: 10rem;
+         height: 16rem;
+     }
+     #carousel-container>span:hover img{
+        width: 10rem;
+        height: 16rem;
+     }
+     #artist img{
+        width: 5rem;
+         height:5rem;
+    }
+    #artist-name{
+        font-size: .9rem;
+    }
+    #station-container{
+        width:90%
+    }
+    #playlist{
+        margin: 1vh 1vw;
+    }
+    #playlist-title{
+        left:35%;
+    }   
+    #current-artist-name{
+        font-size:.8rem;
+    }
+    #progress-container, #volume-container{
+        top:50%;
+        left:25%;
+        width:45%;
+    }
+    #right-side-buttons{
+        right:-0rem;
+    }
+    #volume-container{
+        display:none;
+    }
+    /*Second page
+    css
+    */
+
+    #jumbotron-container {
+        height: 26rem;
+        width:95%;
+        justify-content: center;
+    }
+    #jumbo-image img {
+        width: 36.5rem;
+    }
+    aside {
+       display: none;
+    }
+    
+    #tracks-container {
+        width: 100%;
+    }
+    #playlist-item {
+        justify-content: flex-start;
+    }
+
+}

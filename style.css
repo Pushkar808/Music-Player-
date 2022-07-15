@@ -1,0 +1,532 @@
+
+main{
+    font-family:'Arial';
+    margin-left:5px;
+}
+a{/*so that all anchor tag will not have any default style*/
+    text-decoration: none;
+}
+:root{
+    /*most used color in the web page*/
+    --background-color:#0C1027;
+    --font-color:#FDFDFD;
+}
+.bg-color{
+    background-color: var(--background-color);
+}
+#nav-contents{
+    display: flex;
+    list-style: none;
+    align-items:center;
+
+}
+#nav-contents li{
+    font-size: 2rem;
+    color:var(--font-color);
+}
+#logo img{
+    width:4rem;
+    height:4rem;
+}
+#nav-button a{
+    text-decoration: none;
+    color:var(--font-color);
+    padding:1rem;
+    margin-left: 4rem;
+}
+/* top search bar */
+#search-bar input[type="text"]{
+    color:var(--font-color);
+    background-color:#151e44c7;
+    border:none;
+    width:15rem; 
+    height:1.5rem;
+    border-radius: 0px 5px 5px 0px;
+}
+#search-bar input[type="text"]:focus{
+    outline: none;
+}
+#search-button{
+    position: absolute;
+    height: 1.6rem;
+    top:0.7rem;
+    left:-1.5rem;
+    background-color:#151e44c7;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px 0px 0px 5px;
+    color:var(--font-color);
+}
+#profile-container img{
+    width:4rem;
+    border-radius: 50%;
+    margin-left:1rem;
+}
+/*use this class to aling elememts to left*/
+.left-align{
+    position: relative;
+    left: 40%;
+}
+/*notification icon*/
+#notification{
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    padding: 1.2rem;
+}
+/*use this class to show or hide something*/
+.show-on-pc{
+    display: block;
+}
+.hide-on-pc{
+    display: none;
+}
+/* main */
+main{
+    margin-right: 30rem;
+}
+/* carousel section*/
+#carousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#carousel-container{
+    display:flex;
+    width: 100%;
+    justify-content:space-evenly;
+}
+#carousel-container>span img{
+    width: 15rem;
+    height: 20rem;
+}
+#carousel-container>span:hover img{/*increase size of the image on hover*/
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+/* latest release section */
+#latest-release{
+    color:var(--font-color);
+    letter-spacing:1px;
+}
+#latest-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#release-card:hover{
+    box-shadow:3px 3px 10px rgb(202, 202, 202); 
+}
+#latest-container>div{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0.5rem;
+}
+#latest-section-image img{
+    width: 7rem;
+    height:10rem
+}
+#latest-section-main{
+    margin:2rem;
+}
+.fa-ellipsis/*THREE DOT*/
+{
+    font-size: 1rem;
+    color:var(--font-color);
+}
+#latest-section-main p{
+    color:rgb(133, 133, 133);
+}
+#latest-play-image{
+    position: absolute;
+    color:white;
+    margin:3rem;
+    font-size:50px;
+    display: none;
+}
+#latest-section-image:hover img{
+    opacity:0.1;
+}
+#latest-section-image:hover>#latest-play-image{
+    display: block;
+}
+#time{
+    margin-top:-10px;
+    font-size:0.8rem;
+    color:rgb(133, 133, 133);
+}
+#dropdown-menu{
+    /* dot menu floating  */
+    position: absolute;
+    left:-10.5rem;
+    width:11rem;
+    font-size:0.8rem;
+    margin-top: -2rem;
+    color:black;
+    background-color: lightgrey;
+    padding:0.5rem;
+    display: none;
+}
+#dropdown-menu a{
+    text-decoration: none;
+    color:black;
+}
+#option span{
+    padding-left: 2rem;
+}
+#dot-menu{
+    position: relative;
+    height:2rem;
+}
+#dot-menu:hover>#dropdown-menu{
+        display: block;            
+}
+/* popular artists section */
+#popular{
+    color:var(--font-color);
+}
+#popular-container{
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    margin:1rem;
+    overflow-x: auto;
+}
+#artist{
+    position: relative;
+}
+#artist img{
+   width: 8rem;
+    height:8rem;
+    border-radius:50%;
+   
+}
+#artist-play-image{
+    position: absolute;
+    left:3rem;
+    color:var(--font-color);
+    bottom:1rem;
+    top:2rem;
+    font-size:4rem;
+    display: none;
+}
+#artist img:hover{
+    box-shadow:3px 3px 10px rgb(202, 202, 202); 
+    opacity: 0.5;
+}
+#artist a:hover >#artist-play-image{
+    display: block;            
+}
+#artist-name{
+    text-align: center;
+}
+/* stations section*/
+#station{/*station*/
+    width:50rem;
+}
+#station-container{
+    display: flex;
+    background:#101845;
+    height:6rem;
+    margin-top:3rem;
+    margin-left:1rem;
+    padding:1rem;
+    justify-content: center;
+    align-items:center;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+/*station image*/
+#station-image img{
+    height:5rem;
+    width: 5rem;
+    margin-right: 1rem;
+}
+#station-category{
+    position:relative;
+}
+
+#station-category img{
+    height:6rem;
+    width:6rem;
+    border-radius:50%;
+    opacity: 0.7;
+    filter:blur(1.5px);
+}
+#station-category img:hover{
+    box-shadow:3px 3px 10px rgb(202, 202, 202); 
+    /* adding blury effect on hover */
+    opacity: 0.9;
+    filter:blur(0px);
+}
+#category{
+    position:absolute;
+    text-align: center;
+    font-size:0.8rem;
+    top:2.4rem;
+    left:2.4rem;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+}
+/* playlist section */
+#playlist-container{
+    display:flex;
+    justify-content: space-between;
+    margin-top:2rem;
+}
+#playlist{/*main playlist section*/
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+#playlist a{
+    text-decoration: none;
+    cursor: pointer;
+    color:var(--font-color);
+    font-size:1.5rem;
+}
+#playlist img{
+  display: inline;
+  width:15.3rem;
+  height:9rem;
+  transition: .3s ease;
+  filter:blur(.1rem);
+}
+#playlist img:hover{
+    transform: scale(1.4); 
+}
+#playlist-title{
+    position: absolute;
+    top: 4rem;
+    left: 5rem;
+    letter-spacing: 2px;
+}
+/* latest section */
+#latest h3{
+    color:var(--font-color);
+}
+#latest-lang-container{
+    display: flex;
+    justify-content: flex-start;
+}
+#latest-lang-container img{
+    width:8rem;
+    height:8rem;
+}
+#song-info{
+    color:var(--font-color);
+    font-size:.7rem;
+}
+#song-name{
+    display:block;
+}
+#song-date{
+    text-transform: uppercase;
+}
+/* bottom music player */
+#music-player-continer{
+    position:sticky;
+    display: flex;
+    background-color:#282828;
+    bottom:0px;
+    /* border:1px solid black; */
+    width:100%;
+    height:7rem;
+    margin-top:1rem;
+    justify-content:flex-start;
+    color:var(--font-color);
+}
+/* title of music player  */
+#current-title-container{
+    margin-top:2rem;
+    margin-left:0rem;
+    width:6.5rem;
+    font-size:1.5rem;
+}
+/* artists in the music player */
+#current-artist-name{
+    color:gray;
+    font-size:1rem;
+}
+#current-playing-image img{
+    width: 5rem ;
+    height:5rem;
+    margin-top:1rem;
+    margin-left: 1rem;
+}
+#player-add-remove{
+    position:relative;
+    font-size:1rem;
+    top:1rem;
+    font-size:1rem;
+    margin-top:.5rem;
+}
+#player-add-remove i{
+    margin-left:1rem;
+}   
+#music-control{
+   position:relative;
+   display: inline-block;
+   left:10%;
+   top:1rem;
+}
+#music-control>div{
+    display: inline;
+    margin-left:5rem;
+    padding:.2rem;
+    border-radius:50%;
+}
+#music-control>div>a{
+    color:var(--font-color);
+}
+/*play button of music player*/
+#play{
+    padding:1rem;/*as play button is bigger*/
+    font-size:2rem;
+}
+/*getting border on hover*/
+#music-control div:hover{
+    outline: 1px solid rgb(196, 196, 196);
+    border-radius:100%;
+}
+/*player right side buttons*/
+#right-side-buttons {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    bottom: 30%;
+    font-size: 1.2rem;
+    border-radius:50%;
+    right: -17%;
+}
+#right-side-buttons>div{
+    margin-left: 1rem;
+    height:1.5rem;
+    width:1.5rem;
+}
+#right-side-buttons>div>a{
+    text-decoration: none;
+    color:var(--font-color);
+}
+#right-side-buttons>div>a:hover{
+    border-radius: 50%;
+    /* box-shadow: 0 0 0 1px var(--font-color); */
+    box-shadow: 1px 2px 2px 2px var(--font-color);
+}
+/*progress bar*/
+#progress-container,#volume-container{
+    position:absolute;
+    top:60%;
+    width:50%;
+    height:.5em;
+    left:28%;
+    border-radius:1rem;
+    background-color:#404040;
+}
+#progress,#volume{
+    position:absolute;
+    border-radius:1rem;
+    background-color:#35E687;
+    width:20%;/*increase or decrease this using js to move slider*/
+    height: .5rem;
+    display: flex;
+    justify-content: flex-end;/*so that button will always at last*/
+    align-items: center;
+}
+#progress i:hover,#volume i:hover{
+    cursor: pointer;
+}
+/* editing same progress styling for volume */
+#volume-container{
+    top: 83%;
+    left: 89%;
+}
+#volume{
+    width:50%;/*change this to increase or decrease volume*/
+}
+
+/* right side aside part */
+aside{
+    position:absolute;
+    top: 13vh;
+    bottom:0;
+    left:65vw;
+}
+#queue-menu{
+    /*  border:1px solid black; */
+    width:15vw;
+    position: absolute;
+    padding:1rem;
+    left:50%;
+    background-color:#c5c5c5;
+    top:3rem;
+    display:none;
+}
+#queue-menu a{
+    color:black !important;
+    display:block;
+}
+#queue-button{
+    display:inline;
+}
+#queue-button:hover>#queue-menu{
+   display: block;
+}
+
+.list-number{
+    list-style-position: inside;
+    color:lightgrey;
+    margin-top:2rem;
+}
+#recent-playlist-item{
+    color:white;
+    display: flex;
+    list-style:decimal-leading-zero;
+}
+#track-image{
+    padding:1rem;
+    width:4rem;
+    height:4rem;
+    margin-top:-.4rem;
+}
+#track-image img{
+    width:100%;
+    height:100%;
+}
+#track-info p{
+    font-size:.7rem;
+    color:grey;
+    margin-top:-1rem
+}
+
+#similar-heading h1{ 
+    display: inline-block;
+    margin-right:18rem;
+}
+#similar-heading a{ 
+    color:#3CA896;
+    text-decoration:none;
+}
+#recently-playing{
+    color:white;
+}
+#recent-container{
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+#recent-playlist-item:hover{
+    cursor: pointer;
+
+}
+#recent-playlist-buttons{
+    position: relative;
+    display: flex;
+    right:-11rem;
+}
+#recent-playlist-buttons i{
+    color:white;
+    font-size: .9rem;
+    margin:2rem 0rem;
+    display: inline-block;
+}

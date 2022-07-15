@@ -1,0 +1,176 @@
+/* style sheet for playlist to add more features rest are covered in style.css */
+a{
+    text-decoration: none;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin:3rem 2rem;
+}
+/*jumbotron section for artist name and description*/
+#jumbotron-container{
+    position:relative;
+    /* border:1px solid black; */
+    display:flex;
+    width:66%;
+    height:20rem;
+    box-shadow: 0px 2px 10px 0px black;
+    margin:1rem;
+}
+/* jumbotron image */
+#jumbo-image img{
+    height:100%;
+}
+#jumbo-content{
+    margin:1rem;
+    color:white
+}
+#content{
+    margin-top:-3rem;
+    font-size:.9rem;
+    color:rgb(97, 94, 94);
+}
+/*followers inside followers section*/
+#followers{
+    position: relative;
+    display: inline;
+    left:80%;
+}
+/*button section on the jumbotron*/
+#jumbo-button{
+    margin-top: 2rem;
+}
+#playall-button{
+    all:unset;/*to restyle button*/
+    cursor: pointer;
+    width:8rem;
+    height:2rem;
+    font-size: .8rem;
+    text-align:center;
+    background:linear-gradient(to right, #4428B4,#BA45DC);
+    margin-right:3rem;
+}
+#playall-button:hover{
+    background:linear-gradient(#BA45DC,#4428B4);
+}
+#follow-button{
+    text-decoration: none;
+    color:white;
+}
+#tracks-albums{
+    font-size:.8rem;
+}
+
+.list-number{
+    list-style-position: inside;
+    color:lightgrey;
+    margin-top:2rem;
+}
+/*playlist section*/
+#playlist-item,#recent-playlist-item{
+    color:white;
+    display: flex;
+    width:66%;
+    height:5rem;
+    margin-bottom:1.2rem;
+    box-shadow: 0px 2px 10px 0px black; 
+    list-style:decimal-leading-zero;
+
+}
+#playlist-item a{
+    color:white;
+}
+#playlist-item:hover{
+    background:linear-gradient(to right, #4428B4,#BA45DC);
+    cursor: pointer;
+    box-shadow: 0px 2px 10px 0px white;
+}
+#track-image{
+    padding:1rem;
+    width:4rem;
+    height:4rem;
+    margin-top:-.4rem;
+}
+#track-image img{
+    width:100%;
+    height:100%;
+}
+#track-info p{
+    font-size:.7rem;
+    color:grey;
+    margin-top:-1rem
+}
+#playlist-buttons{
+    position: relative;
+    display: flex;
+    right:-65%;
+}
+#playlist-buttons i{
+    margin:2rem 1rem;
+    display: inline-block;
+}
+
+/* right side aside part */
+aside{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:70%;
+    top:20%;
+}
+/*similar artist*/
+#similar-artist-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width:100%;
+    flex-direction:column;
+    color:white;
+    /* border:1px solid white; */
+}
+#similar-heading h1{ 
+    display: inline-block;
+    margin-right:10rem;
+}
+#similar-heading a{ 
+    color:grey;
+}
+#release-card{
+    display: flex;
+}
+#similar-dot-menu{
+    position: relative;
+    height: 2rem;
+    left: 4.5rem;
+}
+#similar-dot-menu:hover>#dropdown-menu{
+    display: block;            
+}
+/*recent section*/
+#recently-playing{
+    color:white;
+}
+#recent-container{
+    overflow-y: auto;
+    height:23rem;
+}
+#recent-playlist-item{
+    width:100%;
+}
+#recent-playlist-item:hover{
+    background:linear-gradient(to right, #403763,#b945dcbb);
+    cursor: pointer;
+    box-shadow: 0px 2px 10px 0px white;
+}
+#recent-playlist-buttons{
+    position: relative;
+    display: flex;
+    right:-8rem;
+}
+#recent-playlist-buttons i{
+    color:white;
+    font-size: .9rem;
+    margin:2rem 0rem;
+    display: inline-block;
+}
